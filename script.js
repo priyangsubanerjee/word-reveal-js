@@ -1,7 +1,8 @@
-let text = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum dolores ad iusto tempora veritatis. Beatae tempora fuga eveniet porro velit, saepe iste rerum similique ad exercitationem, voluptate ipsa sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum dolores ad iusto tempora veritatis. Beatae tempora fuga eveniet porro velit, saepe iste rerum similique ad exercitationem, voluptate ipsa sequi.`;
+let container = document.querySelector("p");
+let text = container.innerText;
 let arrayPrimary = text.split(" ");
 
-let container = document.querySelector("p");
+container.innerText = "";
 
 for (let i = 0; i < arrayPrimary.length; i++) {
   let span = document.createElement("span");
