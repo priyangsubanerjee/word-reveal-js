@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 100px;
+  padding-top: 400px;
+  padding-bottom: 1000px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.word {
+  font-family: sans-serif;
+  font-size: 70px;
+  color: transparent;
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.word.active {
+  opacity: 1;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 50px;
+    padding-top: 400px;
+    padding-bottom: 800px;
+  }
+  .word {
+    font-size: 50px;
+  }
+}
