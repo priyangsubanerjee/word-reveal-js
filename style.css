@@ -24,14 +24,9 @@ p {
   -webkit-text-stroke-color: black;
 }
 
-.word.active {
-  opacity: 1;
-  color: black;
-}
-
-.header {
+.nav {
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -42,8 +37,13 @@ p {
   font-weight: 300;
 }
 
-.header iconify-icon {
+.nav iconify-icon {
   margin-right: 10px;
+}
+
+.word.active {
+  opacity: 1;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
